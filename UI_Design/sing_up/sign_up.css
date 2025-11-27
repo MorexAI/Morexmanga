@@ -13,6 +13,13 @@ body{
   font-style: normal;
 }
 
+
+.ubuntu-bold {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
 .nunito{
     font-family: "nunito", sans-serif;
 }
@@ -27,24 +34,34 @@ body{
 
 
 .heroe-text{
-    font-size: 3rem;
+    font-size: 2rem;
     color: #46945d;
-    text-align: center;
+    text-align: left;
+     position: relative;
+    bottom: 33px;
     /* padding-top: 80px; */
-
+    padding-left: 20px; 
+    
 }
 
+
+.fa-magnifying-glass{
+    font-size: 2rem;
+    color: #46945d;
+    text-align: center;
+    
+}
 
 .description{
     font-size: 1rem;
     color: #46945dad;
     text-align: center;
-    padding-bottom: 70px;
+    padding-bottom: 50px;
 }
 /* 
 .fa-solid{
-   color: #46945d;
-   font-size: 6rem; 
+    color: #46945d;
+    font-size: 6rem; 
 } */
 
 
@@ -84,13 +101,6 @@ nav{
 .nav_button:hover{
     cursor:pointer;
 }
-
-.fa-magnifying-glass{
-    font-size: 6rem;
-    color: #46945d;
-    text-align: center;
-    /* padding-top: 60px; */
-}
 .heroe{
 
 
@@ -106,6 +116,68 @@ width: 100%;
 background-size: cover;
 background-repeat: no-repeat;
 
-justify-content:center;
+
 /* padding-top:10px ; */
 }
+
+/* login section */
+
+.log_header{
+    text-align: center;
+    font-size: 1.4rem;
+    color: #46945d;
+    margin-bottom: 20px;
+}
+
+.inputs{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    justify-self: center;
+}
+
+
+input{
+    width: 30%;
+    padding: 20px;
+    border-radius: 20px;
+    border-bottom: 1px solid #46945d; 
+    outline: none;
+    border: none;
+   align-self: center;
+   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+}
+
+input:hover{
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+}
+
+.acc_btn{
+       width: 10%;
+    padding: 10px;
+    border-radius: 20px;
+    border-bottom: 1px solid ;
+    background-color: #236d39c0;
+    align-self: center;
+    border: none;
+    color: white;
+    font-size: 1rem;
+
+   
+}
+
+.uid{
+    margin-bottom: 50px;
+}
+
+.acc_link{
+    text-align: center;
+    
+}
+
+.acc_link:hover{
+    cursor: pointer;
+}
+
+
