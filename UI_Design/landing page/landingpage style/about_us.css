@@ -63,15 +63,11 @@ nav{
     padding-top: 80px;
 
 }
-.fa-solid{
+.fa-magnifying-glass{
     font-size: 6rem;
     color: #fff;
     text-align: center;
     padding-top: 60px;
-}
-
-.fa-magnifying-glass{
-    font-size:20px;
 }
 
 .abt-logo-text{
@@ -79,7 +75,7 @@ nav{
     color: #fff;
     padding: 0px 0px 0px 30px;
     position: relative;
-    bottom: 32px;
+    bottom: 3px;
 }
 
 .heroe{
