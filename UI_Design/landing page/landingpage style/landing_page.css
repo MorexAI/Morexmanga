@@ -79,7 +79,7 @@ nav{
     padding-top: 60px;
 }
 .heroe{
-background-image:url(/Quickserch_photos/chalk_board.jpg);
+background-image:url(../../Quickserch_photos/chalk_board.jpg);
 
 }
 
@@ -106,7 +106,7 @@ justify-content:center;
 
 /* SUB HEAD */
  .sub_head{
-    background-image: linear-gradient(rgba(209, 205, 205, 0.521), rgba(0, 0, 0, 0.836)),url(/Quickserch_photos/student_and_tutors.jpeg);
+    background-image: linear-gradient(rgba(209, 205, 205, 0.521), rgba(0, 0, 0, 0.836)),url(../../Quickserch_photos/student_and_tutors.jpeg);
     background-size: cover;
     height: 400px;
     background-attachment: fixed;
@@ -189,7 +189,7 @@ justify-content:center;
 
 /* FOOTER */
 footer{
-   background-image: linear-gradient(rgba(0, 0, 0, 0.521), rgba(0, 0, 0, 0.836)),url(/Quickserch_photos/camera_magnifier.jpg);
+   background-image: linear-gradient(rgba(0, 0, 0, 0.521), rgba(0, 0, 0, 0.836)),url(../../Quickserch_photos/camera_magnifier.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   color: #fff;
