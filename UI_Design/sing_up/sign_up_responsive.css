@@ -5,13 +5,19 @@
   .description {
     font-size: 0.95rem;
   }
+  .inputs {
+    width: 100%;
+  }
+  input {
+    width: 60%;
+  }
 }
 
 @media (max-width: 768px) {
   nav {
     justify-content: center;
-    padding: 20px 20px 0 20px;
-    gap: 10px;
+    padding: 16px 16px 0 16px;
+    gap: 8px;
     flex-wrap: wrap;
   }
   .navlink {
@@ -54,4 +60,3 @@
     width: 60%;
   }
 }
-

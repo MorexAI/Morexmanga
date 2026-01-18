@@ -1,14 +1,26 @@
 @media (max-width: 1024px) {
-  .heroe-text {
-    font-size: 4rem;
-    padding-top: 60px;
+  .heroe {
+    background-size: cover;
+    background-position: center;
   }
-  .fa-magnifying-glass {
+  .banner {
+    height: auto;
+    padding: 60px 20px 40px 20px;
+  }
+  .sub_head {
+    height: auto;
+    padding: 40px 0;
+  }
+  .heroe-text {
     font-size: 4rem;
     padding-top: 40px;
   }
+  .fa-magnifying-glass {
+    font-size: 4rem;
+    padding-top: 20px;
+  }
   .sub_text {
-    width: 70%;
+    width: 80%;
     font-size: 18px;
   }
   .button_box {
@@ -19,8 +31,8 @@
 @media (max-width: 768px) {
   nav {
     justify-content: center;
-    padding: 20px 20px 0 20px;
-    gap: 10px;
+    padding: 16px 16px 0 16px;
+    gap: 8px;
     flex-wrap: wrap;
   }
   .navlink {
@@ -31,26 +43,26 @@
     padding: 6px 10px;
   }
   .heroe-text {
-    font-size: 3rem;
-    padding-top: 40px;
+    font-size: 2.6rem;
+    padding-top: 32px;
   }
   .fa-magnifying-glass {
-    font-size: 3rem;
-    padding-top: 20px;
+    font-size: 2.6rem;
+    padding-top: 16px;
   }
   .description {
-    font-size: 1.4rem;
-    padding-bottom: 40px;
-    padding-inline: 20px;
+    font-size: 1.2rem;
+    padding-bottom: 32px;
+    padding-inline: 16px;
   }
   .sub_text {
     width: 90%;
-    font-size: 16px;
-    padding-top: 40px;
+    font-size: 15px;
+    padding-top: 32px;
   }
   .button_box {
     width: 90%;
-    margin-top: 20px;
+    margin-top: 16px;
   }
   .btn_body {
     flex-direction: column;
@@ -79,4 +91,3 @@
     font-size: 14px;
   }
 }
-
