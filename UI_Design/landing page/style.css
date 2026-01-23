@@ -1,0 +1,308 @@
+:root {
+    --bg-color: #0b0b0b;
+    --card-bg: #1a1a1a;
+    --text-white: #ffffff;
+    --text-grey: #b3b3b3;
+    --accent-yellow: #ffb400; /* Gold/Yellow from image */
+    --accent-green: #2ecc71;
+    --banner-yellow: #ffcc00;
+    --display-font: 'Poppins', 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-white);
+    font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Modern sans-serif */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Reset & Utilities */
+* {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Header/Nav - keeping it minimal to match the clean look */
+header {
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: transparent; /* Blends in */
+}
+
+nav a {
+    color: var(--text-grey);
+    margin-left: 20px;
+    font-size: 0.9rem;
+    transition: color 0.3s;
+}
+
+nav a:hover, nav a.active {
+    color: var(--text-white);
+}
+
+/* Main Layout Grid */
+.main-container {
+    display: grid;
+    grid-template-columns: 2.5fr 1fr; /* 70% / 30% split approx */
+    gap: 30px;
+    padding: 20px 40px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+/* Section Headers */
+.section-header {
+    color: var(--accent-yellow);
+    font-size: 1.1rem;
+    font-weight: 600;
+    font-family: var(--display-font);
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.section-header i, .section-header span.icon {
+    font-size: 1rem;
+}
+
+/* Featured Hero Card */
+.featured-section {
+    position: relative;
+}
+
+.featured-card {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    border-radius: 20px;
+    overflow: hidden;
+    background-color: #000;
+}
+
+.featured-bg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.8;
+}
+
+.featured-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0.5) 50%, rgba(0,0,0,0) 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 40px;
+}
+
+.featured-content {
+    max-width: 500px;
+}
+
+.breadcrumb {
+    color: var(--text-grey);
+    font-size: 0.85rem;
+    margin-bottom: 10px;
+}
+
+.featured-title {
+    font-size: 3rem;
+    font-weight: 800;
+    font-family: var(--display-font);
+    margin: 0 0 10px 0;
+    line-height: 1.1;
+}
+
+.episode-info {
+    color: var(--text-grey);
+    font-size: 0.9rem;
+    margin-bottom: 15px;
+}
+
+.tags {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.tag {
+    background-color: var(--accent-green);
+    color: #000;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    font-family: var(--display-font);
+}
+
+.description {
+    color: var(--text-grey);
+    font-size: 0.95rem;
+    line-height: 1.5;
+    margin-bottom: 30px;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.carousel-indicators {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 8px;
+}
+
+.dot {
+    width: 8px;
+    height: 8px;
+    background-color: #555;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.dot.active {
+    background-color: var(--accent-yellow);
+    width: 24px;
+    border-radius: 4px;
+}
+
+/* Trending Sidebar */
+.trending-section {
+    background-color: var(--card-bg); /* Dark card background for the list */
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.trending-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.trending-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.rank {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--text-grey);
+    width: 25px;
+}
+
+.trending-thumb {
+    width: 50px;
+    height: 70px;
+    border-radius: 6px;
+    object-fit: cover;
+}
+
+.trending-info {
+    flex: 1;
+}
+
+.trending-title {
+    font-size: 0.95rem;
+    font-weight: 600;
+    margin: 0 0 5px 0;
+    display: block;
+}
+
+.trending-stats {
+    font-size: 0.75rem;
+    color: var(--text-grey);
+    display: flex;
+    gap: 10px;
+}
+
+/* Bottom Banner */
+.banner-container {
+    padding: 0 40px 40px 40px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.promo-banner {
+    background-color: var(--banner-yellow);
+    color: #000;
+    border-radius: 15px;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+    position: relative;
+    height: 150px;
+}
+
+.banner-content {
+    z-index: 2;
+    max-width: 60%;
+}
+
+.banner-content h2 {
+    margin: 0 0 10px 0;
+    font-size: 1.8rem;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+.banner-content p {
+    margin: 0;
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .main-container {
+        grid-template-columns: 1fr; /* Stack them */
+    }
+    
+    .trending-section {
+        background-color: transparent; /* Remove bg when stacked? or keep it. Let's keep it consistent. */
+        padding: 0;
+    }
+    
+    .featured-card {
+        height: 400px;
+    }
+}
+
+@media (max-width: 768px) {
+    .banner-container, .main-container, header {
+        padding: 15px;
+    }
+    
+    .featured-title {
+        font-size: 2rem;
+    }
+    
+    .promo-banner {
+        flex-direction: column;
+        text-align: center;
+        height: auto;
+    }
+    
+    .banner-content {
+        max-width: 100%;
+    }
+}
