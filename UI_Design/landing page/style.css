@@ -1,5 +1,5 @@
 :root {
-    --bg-color: #0b0b0b;
+    --bg-color: #000000;
     --card-bg: #1a1a1a;
     --text-white: #ffffff;
     --text-grey: #b3b3b3;
@@ -45,9 +45,9 @@ header {
 
 .logo img {
     height: 56px;
-    width: 9rem;
+    width: 20rem;
     display: block;
-    object-fit: cover;
+    object-fit:cover;
 }
 
 nav a {
